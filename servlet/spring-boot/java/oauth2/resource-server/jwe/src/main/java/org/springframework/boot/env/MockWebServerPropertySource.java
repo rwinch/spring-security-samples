@@ -38,7 +38,7 @@ import org.springframework.http.MediaType;
 public class MockWebServerPropertySource extends PropertySource<MockWebServer> implements DisposableBean {
 
 	private static final MockResponse JWKS_RESPONSE = response(
-			"{ \"keys\": [ { \"kty\": \"RSA\", \"e\": \"AQAB\", \"n\": \"jvBtqsGCOmnYzwe_-HvgOqlKk6HPiLEzS6uCCcnVkFXrhnkPMZ-uQXTR0u-7ZklF0XC7-AMW8FQDOJS1T7IyJpCyeU4lS8RIf_Z8RX51gPGnQWkRvNw61RfiSuSA45LR5NrFTAAGoXUca_lZnbqnl0td-6hBDVeHYkkpAsSck1NPhlcsn-Pvc2Vleui_Iy1U2mzZCM1Vx6Dy7x9IeP_rTNtDhULDMFbB_JYs-Dg6Zd5Ounb3mP57tBGhLYN7zJkN1AAaBYkElsc4GUsGsUWKqgteQSXZorpf6HdSJsQMZBDd7xG8zDDJ28hGjJSgWBndRGSzQEYU09Xbtzk-8khPuw\" } ] }",
+			"{ \"keys\": [ { \"kty\": \"RSA\", \"e\": \"AQAB\", \"n\": \"i7H90yfquGVhXxekdzXkMaxlIg67Q_ofd7iuFHtgeUx-Iye2QjukuULhl774oITYnZIZsh2UHxRYG8nFypcYZfHJMQes_OYFTkTvRroKll5p3wxSkhpARbkEPFMyMJ5WIm3MeNO2ermMhDWVVeI2xQH-tW6w-C6b5d_F6lrIwCnpZwSv6PQ3kef-rcObp_PZANIo232bvpwyC6uW1W2kpjAvYJhQ8NrkG2oO0ynqEJW2UyoCWRdsT2BLZcFMAcxG3Iw9b9__IbvNoUBwr596JYfzrX0atiKyk4Yg8dJ1wBjHFN2fkHTlzn6HDwTJkj4VNDQvKu4P2zhKn1gmWuxhuQ\" } ] }",
 			200);
 
 	private static final MockResponse NOT_FOUND_RESPONSE = response(
